@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+    android:title="Language"
+    android:key="language"
+    android:summary="Choose Current Language"
+    android:entries="@array/language"
+    android:entryValues="@array/langValues"
+        ></ListPreference>
+    
+    
+    <ListPreference
+    android:title="View"
+    android:key="feedView"
+    android:summary="Choose Current News Feed Preference"
+    android:entries="@array/feedView"
+    android:entryValues="@array/feedValues"
+        ></ListPreference>
+
+</PreferenceScreen>

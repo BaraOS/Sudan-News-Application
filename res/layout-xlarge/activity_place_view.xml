@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1565C0"
+ 
+    >
+    </android.support.v7.widget.Toolbar>
+ 
+ <FrameLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@+id/toolbar_top" >
+   
+      <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_dropshadow" />
+    
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                 />
+
+            <ImageView
+                android:id="@+id/imageView1"
+ 				android:layout_width="800dp"
+    			android:layout_height="500dp"
+    			android:adjustViewBounds="true"
+    			android:layout_marginTop="16dp"
+    			 />
+
+            <TextView
+                android:id="@+id/photodescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                 />
+
+            <TextView
+                android:id="@+id/story"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textIsSelectable="true"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="#212121"
+                android:layout_gravity="center"
+                />
+            
+        </LinearLayout>
+    </ScrollView>
+    
+    </FrameLayout>
+    
+</RelativeLayout>

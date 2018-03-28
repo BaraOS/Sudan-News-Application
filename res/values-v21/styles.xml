@@ -1,0 +1,17 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- API 21 theme customizations can go here. -->
+     	<item name="colorControlNormal">#FAFAFA</item> 
+        <item name="android:colorPrimary">#1565C0</item>
+    	<item name="android:colorPrimaryDark">#0D47A1</item>
+    	<item name="android:colorAccent">#2196F3</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+</resources>
